@@ -23,9 +23,17 @@ class RecommendationList(BaseModel):
   books: list[Book]
 ```
 
-**first thing we imported the `BaseModel` from `pydantic`
+**first thing we imported `BaseModel` from `pydantic`
 Then we put our structure: `title -> author -> year -> description`, And we define each one it we want it srting or integer *Side Note:* if the year (int) is str *example:* '1949', `pydantic` library will make it `int`, so it's like: `'1949' -> 1949`
-And the `RecommendationList` class is about: structue the library**
+And the `RecommendationList` class it's like about: structue the library**
+
+*Example:* 
+```
+{
+  "Book" : 'Book1', 'Book2', 'Book3'
+}
+```
+
 
 ### The GenAI Client and Configuration
 
